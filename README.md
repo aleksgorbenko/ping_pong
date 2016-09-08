@@ -18,9 +18,9 @@ A simple application that lists the latest ping pong games and has the ability t
 
 1. Download the project to your local machine.
 2. Navigate to the project folder.
-3. Run `npm install` then `bower install`. If you don't have [Bower](https://bower.io/) installed, then run `npm install -g bower' first.
+3. Run `npm install` then `bower install`. If you don't have [Bower](https://bower.io/) installed, then run `npm install -g bower` first.
 4. Run the following command: `gulp webserver` to start the local server.
 
 Terminal will show you the local address at which the server starts. Copy that address to your browser bar.
 
-Alternatively you can just drop index.html file in your browser.
+Alternatively you can just drop `index.html` file in your browser.
