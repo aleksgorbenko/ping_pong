@@ -1,0 +1,82 @@
+$default-height: 100px;
+
+h2 {
+  color: #666;
+
+}
+
+.latest-games,
+.add-games {
+  min-height: $default-height;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.glyphicon-user {
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  background-color: #fafafa;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.game {
+  min-height: $default-height;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  .player-names {
+
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .scores {
+
+  }
+}
+
+.glyphicon-trash {
+  color: blue;
+  line-height: $default-height;
+  vertical-align: middle;
+  &:hover {
+    color: red;
+    cursor: pointer;
+  }
+}
+
+.winner {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 7px;
+  margin-right: 7px;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 20px;
+  width: 220px;
+  height: 50px;
+  padding: 0 10px;
+
+  color: #888;
+  background: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-24.png) no-repeat ;
+  background-position: 185px 15px;
+  border: 1px solid #bbb;
+}
+
+.btn-primary {
+  border-radius: 0;
+  padding: 10px 20px;
+  margin: 20px;
+
+}
