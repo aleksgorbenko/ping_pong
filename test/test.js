@@ -15,7 +15,6 @@ describe('add a game button', function() {
     // boilerplate, the length should be 4.
   });
 
-
   it('should NOT add the game if player1 and player2 are the same', function() {
     // asserts if the alert has "A player cannot play against
     // himself. Please choose different players." message if both

@@ -4,7 +4,6 @@ var webserver = require('gulp-webserver');
 var assetsDev = 'scss/';
 var assetsProd = 'public/css/';
 
-
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
