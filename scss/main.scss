@@ -1,4 +1,5 @@
 $default-height: 100px;
+$breakpoint-tablet: 768px;
 
 /* calculate power of a number */
 @function pow($number, $exp) {
@@ -120,4 +121,28 @@ select {
   padding: 10px 20px;
   margin: 20px;
   @include goldenRatio(1);
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .game {
+    .player-names {
+      @include goldenRatio(0);
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    .scores {
+      @include goldenRatio(0);
+    }
+  }
+  .glyphicon-user {
+    padding: 8px;
+    font-size: 15px;
+  }
+  select {
+    @include goldenRatio(0);
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    background-position: 120px 15px;
+  }
 }
