@@ -1,9 +1,50 @@
 $default-height: 100px;
 
+/* calculate power of a number */
+@function pow($number, $exp) {
+  $numAtPow: 1;
+
+  @if $exp > 0 {
+    @for $i from 1 through $exp {
+      $numAtPow: $numAtPow * $number;
+    }
+  } @else if $exp < 0 {
+    @for $i from 1 through ($exp * (-1)) {
+      $numAtPow: $numAtPow / $number;
+    }
+  }
+
+  @return $numAtPow;
+}
+
+/* calculate golden ratio height */
+@function heightGold($num) {
+  @while ($num % 8 != 0) {
+    $num: $num + 1;
+  }
+
+  @return $num;
+}
+
+/* calculate golden ratio font size */
+@function fontGold($scale) {
+  @return floor(16 * pow(1.618, $scale));
+}
+
+@mixin goldenRatio($scale) {
+  font-size: fontGold($scale) + px ;
+  line-height: heightGold(fontGold($scale)) + px;
+}
+
+.clear {
+  clear: both;
+}
+
 h2 {
   color: #666;
-
+  @include goldenRatio(2);
 }
+
 
 .latest-games,
 .add-games {
@@ -26,12 +67,12 @@ h2 {
   margin-top: 15px;
   margin-bottom: 15px;
   .player-names {
-
+    @include goldenRatio(1);
     margin-right: 15px;
     margin-left: 15px;
   }
   .scores {
-
+    @include goldenRatio(0);
   }
 }
 
@@ -67,7 +108,7 @@ select {
   width: 220px;
   height: 50px;
   padding: 0 10px;
-
+  @include goldenRatio(1);
   color: #888;
   background: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-24.png) no-repeat ;
   background-position: 185px 15px;
@@ -78,5 +119,5 @@ select {
   border-radius: 0;
   padding: 10px 20px;
   margin: 20px;
-
+  @include goldenRatio(1);
 }
