@@ -1,0 +1,13 @@
+{
+  "name": "ping_pong_funding_circle",
+  "description": "code test for funding circle",
+  "main": "main.js",
+  "authors": [
+    "Aleks Gorbenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aleksgorbenko/ping_pong",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
