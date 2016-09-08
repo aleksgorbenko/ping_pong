@@ -29,7 +29,7 @@ $(function() {
       } else if (result.firstPlayer.wins === result.secondPlayer.wins) {
           return;
       } else {
-          $('.player-two:last').after('<div class="winner"></div>');
+          $('.player-two:last').after('<div class="winner-circle"></div>');
       }
     }
   });
