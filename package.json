@@ -1,0 +1,27 @@
+{
+  "name": "ping_pong_funding_circle",
+  "version": "1.0.0",
+  "description": "code test for funding circle",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksgorbenko/ping_pong.git"
+  },
+  "author": "Aleks Gorbenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksgorbenko/ping_pong/issues"
+  },
+  "homepage": "https://github.com/aleksgorbenko/ping_pong#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
