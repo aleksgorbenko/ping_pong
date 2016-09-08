@@ -25,7 +25,7 @@ $(function() {
     } else {
       $('.latest-games').append(gameHtml(result));
       if (result.firstPlayer.wins > result.secondPlayer.wins) {
-        $('.player-one:last').before('<div class="winner"></div>');
+        $('.player-one:last').before('<div class="winner-circle"></div>');
       } else if (result.firstPlayer.wins === result.secondPlayer.wins) {
           return;
       } else {
