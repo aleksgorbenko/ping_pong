@@ -14,7 +14,7 @@ A simple application that lists the latest ping pong games and has the ability t
 
 ## Launching
 
-[Node](https://nodejs.org/en/) and [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) need to be installed locally to use the above command.
+[Node](https://nodejs.org/en/) and [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) need to be installed locally.
 
 1. Download the project to your local machine.
 2. Navigate to the project folder.
