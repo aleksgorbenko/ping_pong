@@ -59,8 +59,8 @@ function gameHtml(result) {
           result.secondPlayer.wins + ' ' + result.secondPlayer.name +
           '</span>' +
           '<i class="glyphicon glyphicon-user player-two"></i>' +
-          '<br>' +
           '<i class="glyphicon glyphicon-trash pull-right"></i>' +
+          '<br>' +
           '<span class="scores">' +
             scores(); +
           '</span>' +
