@@ -1,4 +1,5 @@
 $(function() {
+  // Removes the game from the page
   $('.latest-games').on('click', '.glyphicon-trash', function removeGame() {
     var input = confirm("Are you sure you want this game removed?");
     if (input === true) {
@@ -8,6 +9,9 @@ $(function() {
     }
   });
 
+  // Adds a game with random scores.
+  // Alerts if the player is not chosen or
+  // the same player is chosen on both sides
   $('.add-games .btn').click(function() {
     var playerOne = $('.player-choice-one option:selected').text();
     var playerTwo = $('.player-choice-two option:selected').text();
@@ -31,6 +35,9 @@ $(function() {
   });
 });
 
+// Creates a string with all games scores
+// to be apended for final game HTML
+// component
 function gameHtml(result) {
   function scores() {
     var scoreList = "";
@@ -60,6 +67,8 @@ function gameHtml(result) {
          '</div>';
 }
 
+// Loop for the ping-pong game to generate
+// random scores and return as an object
 function game(playerOne, playerTwo) {
   var games = {
     p1: {
@@ -94,6 +103,8 @@ function game(playerOne, playerTwo) {
   }
 }
 
+// Checks for winner. Used in game function
+// after every loop
 function checkForWinner(firstPlayer, secondPlayer, scores) {
   if (firstPlayer.points === 6 && secondPlayer.points === 0) {
     firstPlayer.wins++;
@@ -117,6 +128,8 @@ function checkForWinner(firstPlayer, secondPlayer, scores) {
   return;
 }
 
+// Resets the game after the winner is
+// established and records the last games' results
 function resetGame(firstPlayer, secondPlayer, scores) {
   scores.push(firstPlayer.points + '-' + secondPlayer.points);
   firstPlayer.points = 0;
