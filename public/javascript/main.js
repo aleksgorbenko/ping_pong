@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   // Removes the game from the page
   $('.latest-games').on('click', '.glyphicon-trash', function removeGame() {
     var input = confirm("Are you sure you want this game removed?");
@@ -12,7 +12,7 @@ $(function() {
   // Adds a game with random scores.
   // Alerts if the player is not chosen or
   // the same player is chosen on both sides
-  $('.add-games .btn').click(function() {
+  $('.add-games .btn').click(function () {
     var playerOne = $('.player-choice-one option:selected').text();
     var playerTwo = $('.player-choice-two option:selected').text();
 
@@ -27,9 +27,9 @@ $(function() {
       if (result.firstPlayer.wins > result.secondPlayer.wins) {
         $('.player-one:last').before('<div class="winner-circle"></div>');
       } else if (result.firstPlayer.wins === result.secondPlayer.wins) {
-          return;
+        return;
       } else {
-          $('.player-two:last').after('<div class="winner-circle"></div>');
+        $('.player-two:last').after('<div class="winner-circle"></div>');
       }
     }
   });
@@ -52,19 +52,19 @@ function gameHtml(result) {
     return scoreList;
   }
   return '<div class="game text-center col-xs-12 col-md-10 col-md-offset-1">' +
-          '<i class="glyphicon glyphicon-user player-one"></i>' +
-          '<span class="player-names">' +
-          result.firstPlayer.name + ' ' + result.firstPlayer.wins +
-          ' - ' +
-          result.secondPlayer.wins + ' ' + result.secondPlayer.name +
-          '</span>' +
-          '<i class="glyphicon glyphicon-user player-two"></i>' +
-          '<i class="glyphicon glyphicon-trash pull-right"></i>' +
-          '<br>' +
-          '<span class="scores">' +
-            scores(); +
-          '</span>' +
-         '</div>';
+    '<i class="glyphicon glyphicon-user player-one"></i>' +
+    '<span class="player-names">' +
+    result.firstPlayer.name + ' ' + result.firstPlayer.wins +
+    ' - ' +
+    result.secondPlayer.wins + ' ' + result.secondPlayer.name +
+    '</span>' +
+    '<i class="glyphicon glyphicon-user player-two"></i>' +
+    '<i class="glyphicon glyphicon-trash pull-right"></i>' +
+    '<br>' +
+    '<span class="scores">' +
+    scores(); +
+      '</span>' +
+      '</div>';
 }
 
 // Loop for the ping-pong game to generate
@@ -111,19 +111,19 @@ function checkForWinner(firstPlayer, secondPlayer, scores) {
     resetGame(firstPlayer, secondPlayer, scores);
     return;
   } else if (secondPlayer.points === 6 && firstPlayer.points === 0) {
-      secondPlayer.wins++;
-      resetGame(firstPlayer, secondPlayer, scores);
-      return;
+    secondPlayer.wins++;
+    resetGame(firstPlayer, secondPlayer, scores);
+    return;
   } else if (firstPlayer.points > 10 &&
-             firstPlayer.points - secondPlayer.points >= 2) {
-      firstPlayer.wins++;
-      resetGame(firstPlayer, secondPlayer, scores);
-      return;
+    firstPlayer.points - secondPlayer.points >= 2) {
+    firstPlayer.wins++;
+    resetGame(firstPlayer, secondPlayer, scores);
+    return;
   } else if (secondPlayer.points > 10 &&
-             secondPlayer.points - firstPlayer.points >= 2) {
-      secondPlayer.wins++;
-      resetGame(firstPlayer, secondPlayer, scores);
-      return;
+    secondPlayer.points - firstPlayer.points >= 2) {
+    secondPlayer.wins++;
+    resetGame(firstPlayer, secondPlayer, scores);
+    return;
   }
   return;
 }

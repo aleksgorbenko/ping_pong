@@ -1,0 +1,16 @@
+{
+  "globalDevDependencies": {
+    "chai": "registry:dt/chai#3.4.0+20160601211834",
+    "gulp": "registry:dt/gulp#3.8.0+20160907112908",
+    "gulp-autoprefixer": "registry:dt/gulp-autoprefixer#0.0.0+20160316155526",
+    "gulp-sass": "registry:dt/gulp-sass#0.0.0+20160316155526",
+    "gulp-sourcemaps": "registry:dt/gulp-sourcemaps#0.0.0+20160316155526",
+    "jsdom": "registry:dt/jsdom#2.0.0+20160906180921",
+    "mocha": "registry:dt/mocha#2.2.5+20160720003353"
+  },
+  "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160619023404",
+    "jasmine-jquery": "registry:dt/jasmine-jquery#0.0.0+20160317120654",
+    "jquery": "registry:dt/jquery#1.10.0+20160908203239"
+  }
+}
