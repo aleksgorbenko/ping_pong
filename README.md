@@ -1,5 +1,7 @@
 # PingPong Component
 
+*Note: this project was a coding test which was a part of the interview process. Result - test was accepted and I passed to the next interview stage.*
+
 A simple application that lists the latest ping pong games and has the ability to select two players and add/remove games with randomised scores and number of games. The winner is indicated with a green dot.
 
 ## Tech Used:
